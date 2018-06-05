@@ -1,9 +1,9 @@
 import React from "react";
 import { Text, StyleSheet, View } from "react-native";
 
-const Header = () => (
+const Header = props => (
   <View style={styles.container}>
-    <Text style={styles.titleText}>Fitness Omega</Text>
+    <Text style={styles.titleText}>{props.title}</Text>
   </View>
 );
 
@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     height: 100,
     padding: 10,
+    backgroundColor: "white",
     shadowColor: "black",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.4
